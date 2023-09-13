@@ -16,7 +16,7 @@ const HeroSection = () => {
           <span>Zero Forex Markup</span>{" "}
         </div>
 
-        <div>
+        <div className="hidden md:block">
           <form>
             <div className="flex bg-black p-1 pl-2 rounded-xl justify-between max-w-[360px]">
               <div className="flex items-center">
@@ -47,7 +47,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-12 md:mt-0">
         <Image
           src="/nx_wave_hero.png"
           className="h-auto w-[225px] md:w-[420px] md:h-[420px] max-w-[420px] z-[1] mx-6"
