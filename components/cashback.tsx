@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Cashback = () => {
   return (
-    <div className="py-36 w-full bg-white text-[#9ea7ae] px-36 flex flex-col justify-center md:text-center text-[28px] md:text-[40px] leading-[34px] md:leading-[1.2] md:pb-16 font-medium items-center">
+    <div className="py-36 w-full bg-white text-[#9ea7ae] px-8 md:px-36 flex flex-col justify-center md:text-center text-[28px] md:text-[40px] leading-[34px] md:leading-[1.2] md:pb-16 font-medium items-center">
       <div className="max-w-5xl mb-12">
         <span className="text-[#1a202c] ">Earn 1% assured cashback</span> on
         your spends.{" "}

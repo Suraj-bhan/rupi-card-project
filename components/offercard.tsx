@@ -4,9 +4,9 @@ import Image from "next/image";
 const OfferCard = ({ title, content, img, direction }: OfferCardProps) => {
   return (
     <div
-      className={`flex px-36 gap-24 items-center ${
-        direction === "right" ? "flex-row-reverse" : "flex-row"
-      }`}
+      className={`flex px-12 md:px-36 gap-8 md:gap-24 items-center ${
+        direction === "right" ? "md:flex-row-reverse" : "md:flex-row"
+      } flex-col-reverse`}
     >
       <div className={`flex flex-col gap-12 max-w-[600px] py-12`}>
         <div className="text-[40px] leading-[48px] ">

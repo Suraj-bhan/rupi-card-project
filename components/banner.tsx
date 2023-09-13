@@ -3,7 +3,7 @@ import HeroSection from "./herosection";
 
 const Banner = () => {
   return (
-    <div className="h-screen w-full  px-36 py-4">
+    <div className="h-screen w-full px-8 md:px-36 py-4">
       <div className="z-10 flex flex-col w-full">
         <Header />
         <HeroSection />
