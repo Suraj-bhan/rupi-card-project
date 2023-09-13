@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <div className="z-10 flex md:flex-col justify-between mt-12">
+    <div className="z-10 flex justify-between mt-12">
       <div className="text-black">
         <div className="text-[54px] leading-[54px]  ax-w-[700px] mb-4">
           <strong>NX Wave.</strong> The next-gen credit card for those who love
