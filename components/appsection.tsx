@@ -61,14 +61,15 @@ const AppSection = () => {
           img={item.img}
         />
       ))}
-      <div className="flex justify-between flex-col md:flex-row md:gap-12">
-        {InfoCardData.map((item) => (
+      <div className="flex justify-between flex-col md:flex-row gap-2 md:gap-12">
+        {InfoCardData.map((item, index) => (
           <InfoCard
             key={item.title}
             title={item.title}
             content={item.content}
             img={item.img}
             secondaryImg={item.secondaryImg}
+            direction={index % 2 === 0 ? "left" : "right"}
           />
         ))}
       </div>

@@ -16,4 +16,5 @@ export interface InfoCardProps {
   content?: string;
   img: string;
   secondaryImg?: string;
+  direction: "left" | "right";
 }
