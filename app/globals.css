@@ -6,6 +6,10 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --uni-green: #00dcc8;
+  --uni-yellow: #fff061;
+  --uni-text-gradient-green: #8fffef;
+  --uni-text-gradient-yellow: #f9f490;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -24,4 +28,36 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+}
+
+.uni-gradient-primary {
+  background-image: linear-gradient(
+    90deg,
+    var(--uni-text-gradient-green) 25%,
+    var(--uni-text-gradient-yellow)
+  );
+  background: linear-gradient(
+    90deg,
+    var(--uni-text-gradient-green) 25%,
+    var(--uni-text-gradient-yellow)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.download-bg {
+  background-image: linear-gradient(158deg, #5ad6c4, #fdef78);
+}
+
+.text-grey-dark {
+  --tw-text-opacity: 1;
+  color: rgba(141, 141, 149, var(--tw-text-opacity));
+}
+
+.bg-black-2 {
+  --tw-bg-opacity: 1;
+  background-color: rgba(34, 34, 34, var(--tw-bg-opacity));
 }
