@@ -43,7 +43,7 @@ const Footer = () => {
     },
   ];
   return (
-    <div className="w-full px-36 py-24 pb-48">
+    <div className="w-full px-8 md:px-36  py-24 pb-48">
       <div>
         <div>
           <Image
@@ -75,22 +75,24 @@ const Footer = () => {
           Grievance Redressal Mechanism - SBM Bank India
         </div>
         <div className="h-[1px] download-bg"></div>
-        <div className="flex justify-between my-8">
-          <div className="flex gap-8">
+        <div className="flex md:flex-row flex-col justify-between my-8">
+          <div className="flex flex-wrap justify-center md:justify-normal gap-4 md:gap-8">
             {anchorData.map((item) => (
               <a key={item.title} href={item.href}>
                 {item.title}
               </a>
             ))}
           </div>
-          <div className="flex">
+          <div className="flex flex-wrap justify-center md:justify-normal gap-4 md:gap-0 mt-4 md:mt-0">
             {tncLinks.map((item, index) => (
               <a
                 key={item.title}
                 href={item.href}
                 className={`${
-                  index <= tncLinks.length - 2 ? "border-r-2 border-white" : ""
-                } px-4 ${index === tncLinks.length - 1 ? "pr-0" : ""}`}
+                  index <= tncLinks.length - 2
+                    ? "border-r-2 border-white"
+                    : ""
+                } px-2 md:px-4 ${index === tncLinks.length - 1 ? "pr-0" : ""}`}
               >
                 {item.title}
               </a>
