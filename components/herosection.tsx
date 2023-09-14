@@ -4,7 +4,7 @@ const HeroSection = () => {
   return (
     <div className="z-10 flex flex-col md:flex-row justify-between mt-12">
       <div className="text-black">
-        <div className="text-[54px] leading-[54px] max-w-[700px] mb-4">
+        <div className="text-4xl md:text-[54px] md:leading-[54px] max-w-[700px] mb-4">
           <strong>NX Wave.</strong> The next-gen credit card for those who love
           rewards.
         </div>
