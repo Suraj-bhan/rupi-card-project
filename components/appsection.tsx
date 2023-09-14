@@ -52,7 +52,7 @@ const AppSection = () => {
         width={900}
         height={500}
       />
-      
+
       {AppCardData.map((item) => (
         <AppCard
           key={item.title.primary}
@@ -61,8 +61,7 @@ const AppSection = () => {
           img={item.img}
         />
       ))}
-
-      <div className="flex justify-between gap-12">
+      <div className="flex justify-between flex-col md:flex-row md:gap-12">
         {InfoCardData.map((item) => (
           <InfoCard
             key={item.title}
