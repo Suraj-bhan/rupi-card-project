@@ -27,7 +27,7 @@ const OfferCards = () => {
     },
   ];
   return (
-    <div className="py-36 w-full bg-white text-black flex flex-col gap-24">
+    <div className="py-24 md:py-36 w-full bg-white text-black flex flex-col gap-12 md:gap-24">
       {data.map((item, index) => (
         <OfferCard
           key={item.title.primary}
